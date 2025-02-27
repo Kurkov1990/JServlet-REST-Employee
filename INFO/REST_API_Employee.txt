@@ -1,0 +1,78 @@
+Створення даних
+POST
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees
+
+{
+    "name": "John",
+    "position": "CEO",
+    "phone": "+380631234567"
+}
+
+{
+    "name": "Sam",
+    "position": "Developer",
+    "phone": "+380637654321"
+}
+
+{
+    "name": "Sarah",
+    "position": "QA",
+    "phone": "+380661234567"
+}
+
+{
+    "name": "Tom",
+    "position": "Manager",
+    "phone": "+380991234567"
+}
+
+{
+    "firstName": "Bob",
+    "position": "PO",
+    "phone": "+380953295649"
+}
+
+-------------------------------------------------------------------------------
+
+Отримання всіх даних
+GET
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees
+
+-------------------------------------------------------------------------------
+
+Отримання даних за id
+За існуючим id
+GET
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees/4
+
+За НЕ існуючим id
+GET
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees/9
+
+-------------------------------------------------------------------------------
+
+Оновлення даних за id
+PUT
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees/2
+{
+       "name": "Sam",
+       "position": "Team Lead",
+       "phone": "+380637654324"
+}
+
+PUT
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees/3
+
+{
+    "name": "Sarah",
+    "position": "Analyst",
+    "phone": "+380661234568"
+}
+
+-------------------------------------------------------------------------------
+
+Видалення даних за id
+DELETE
+http://localhost:8080/JServlet-REST-Employee-1.0-SNAPSHOT/api/v1/employees/4
+
+

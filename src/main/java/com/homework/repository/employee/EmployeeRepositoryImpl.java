@@ -67,11 +67,6 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     }
 
     @Override
-    public void update(Long id, Employee request) {
-
-    }
-
-    @Override
     public void update(Long id, EmployeeDtoRequest request) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {

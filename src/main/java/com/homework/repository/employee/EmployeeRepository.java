@@ -15,7 +15,7 @@ public interface EmployeeRepository extends BaseRepository<Employee, EmployeeDto
 
     Optional<Employee> getById(Long id);
 
-    void update(Long id, Employee request);
+    void update(Long id, EmployeeDtoRequest request);
 
     boolean deleteById(Long id);
 
